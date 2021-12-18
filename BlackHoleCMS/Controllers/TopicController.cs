@@ -68,7 +68,14 @@ namespace BlackHoleCMS.Controllers
                 await _context.Database.ExecuteSqlRawAsync("SET IDENTITY_INSERT lookup.topic ON;");
                 
                 var tpc = await _context.Topic.OrderByDescending(model => model.Id).FirstOrDefaultAsync();
-                t.Id = (byte) (tpc.Id + 1);
+                if (tpc.Id != null)
+                {
+                    t.Id = (byte) (tpc.Id + 1);
+                }
+                else
+                {
+                    t.Id = 0;
+                }
                 
 
                 var addedPhoto = new Photo();

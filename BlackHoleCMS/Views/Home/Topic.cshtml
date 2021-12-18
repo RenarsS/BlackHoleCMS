@@ -20,7 +20,14 @@
     {
         <div class="row-md-6 justify-content-center">
             <div class="col-8 mx-auto">
-                <component type="@typeof(_PostCard)" render-mode="WebAssemblyPrerendered" param-Id="@post.Id" param-Title="@post.Title" param-Content="@post.Content" param-Photo="@post.Photo"/>
+
+                @(await Html.RenderComponentAsync<_PostCard>(RenderMode.WebAssemblyPrerendered, new
+                {
+                    Id = post.Id,
+                    Title = post.Title,
+                    Content = post.Content,
+                    Photo = post.Photo
+                }))
             </div>
             <hr class="col-6 mx-auto" style="color: #52489c; height: 5px;"/>
         </div>

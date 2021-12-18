@@ -4,7 +4,6 @@
 
 @{
     ViewData["Title"] = "Home Page";
-
 }
 
 <div class="section">
@@ -16,7 +15,13 @@
         @foreach (var post in Model.Posts)
         {
             <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xl-3 col-sm-6">
-                <component Type="@typeof(_PostCard)" render-mode="WebAssemblyPrerendered" param-Id="@post.Id" param-Content="@post.Content" param-Title="@post.Title" param-Photo="@post.Photo"/>
+                @(await Html.RenderComponentAsync<_PostCard>(RenderMode.WebAssemblyPrerendered, new
+                {
+                    Id = post.Id,
+                    Content = post.Content,
+                    Title = post.Title,
+                    Photo = post.Photo
+                }))
             </div>
         }
     </div>
@@ -32,7 +37,11 @@
         {
             <div class="col-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3 col-sm-6 align-self-baseline justify-content-center">
                 <a asp-controller="Home" asp-action="Topic" asp-route-id="@topic.Id" style="text-decoration: none">
-                    <component type="@typeof(_TopicCard)" render-mode="ServerPrerendered" param-Name="@topic.Name" param-Photo="@topic.Photo?.File"/>
+                    @(await Html.RenderComponentAsync<_TopicCard>(RenderMode.WebAssemblyPrerendered, new
+                    {
+                        Name = topic.Name,
+                        Photo = topic.Photo?.File
+                    }))
                 </a>
             </div>
         }
