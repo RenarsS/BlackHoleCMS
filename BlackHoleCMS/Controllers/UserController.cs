@@ -63,7 +63,7 @@ namespace BlackHoleCMS.Controllers
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Login));
         }
         [Authorize]
         public IActionResult Profile()
