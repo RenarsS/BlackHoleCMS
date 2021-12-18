@@ -1,0 +1,26 @@
+@model User
+
+@{
+    ViewData["Title"] = "Profile";
+    
+}
+<div>
+    <h2>Profils</h2>
+    <h3>@Html.DisplayFor(model => model.Username)</h3>
+    <div class="container-fluid">
+        <ul style="list-style-type: none">
+            <li class="list-item-cms">
+                <a class="btn btn-outline-dark" asp-controller="Post" asp-action="Index">Raksti</a>
+            </li>
+            <li class="list-item-cms">
+                <a class="btn btn-outline-dark" asp-controller="Status" asp-action="Index">Statuss</a>
+            </li>
+            <li class="list-item-cms">
+                <a class="btn btn-outline-dark" asp-controller="Topic" asp-action="Index">Tēmas</a>
+            </li>
+            <li class="list-item-cms">
+                <a class="btn btn-outline-dark" asp-controller="Photo" asp-action="Index">Fotogrāfijas</a>
+            </li>
+        </ul>
+    </div>
+</div>

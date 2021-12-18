@@ -1,0 +1,13 @@
+@model BlackHoleCMS.HttpModels.HttpPhoto
+
+@{
+    ViewData["Title"] = "Upload";
+}
+
+<div class="container">
+    <form asp-controller="Photo" asp-action="Upload" class="form-group" enctype="multipart/form-data">
+        <input type="file" asp-for="File" class="form-control"/>
+        <span asp-validation-for="File" class="text-danger"></span>
+        <button class="btn" type="submit" >Upload</button>
+    </form>
+</div>

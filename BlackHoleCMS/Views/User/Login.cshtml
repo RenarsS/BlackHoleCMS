@@ -1,0 +1,26 @@
+@model User;
+@{
+    ViewData["Title"] = "Login";
+    
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <h1>Ielogošanās</h1>
+        <form asp-action="Login" asp-controller="User">
+            <div class="form-group">
+                <label class="form-label" asp-for="Username"> Lietotājvārds
+                    <input class="form-control" type="text" asp-for="Username" placeholder="Tavs Lietotājvārds"/>
+                </label>
+            </div>
+            <div class="form-group">
+                <label class="form-label" asp-for="Password">Parole
+                    <input class="form-control" type="password" asp-for="Password" placeholder="Tava parole">
+                </label>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-outline-secondary" type="submit">Ielogoties</button>
+            </div>
+        </form>
+    </div>
+</div>

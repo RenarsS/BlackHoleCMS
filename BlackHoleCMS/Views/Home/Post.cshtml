@@ -1,0 +1,24 @@
+@page
+@using BlackHoleCMS.Views.Shared
+@model BlackHoleCMS.Models.Post
+
+@{
+    var photo = ViewBag.Photo;
+
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center ">
+        @if (photo != null)
+            {
+                <div class="post-image col-xl-3 col-md-4 col-xxl-4 col-sm-5">
+                    <component type="@typeof(_Image)" render-mode="WebAssemblyPrerendered" param-Photo="@photo.File" param-Alt="@photo.FileName"/>
+                </div>
+            }
+        <div class="post-content col-xl-7 col-md-5 col-xxl-7 col-sm-6 px-5">
+            <h1>@Html.DisplayFor(post => post.Title)</h1>
+            <p>@Html.DisplayFor(post => post.Content)</p>
+        </div>
+        
+    </div>
+</div>

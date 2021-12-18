@@ -1,0 +1,35 @@
+@model IEnumerable<BlackHoleCMS.Models.Status>
+
+@{
+    ViewData["Title"] = "Statuss";
+}
+
+<h1>Statuss</h1>
+
+<p>
+    <a asp-action="Create">Izveidot Jaunu</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Rediģēt</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Smalkāk</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Dzēst</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

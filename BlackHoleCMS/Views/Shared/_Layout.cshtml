@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - BlackHoleCMS</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/BlackHoleCMS.styles.css" asp-append-version="true"/>
+</head>
+<body>
+<header>
+    <div class="super-header">
+        <a asp-controller="Home" asp-action="Index" style="color: #ffffff">
+            <h1>Melnie caurumi</h1>
+        </a>
+    </div>
+</header>
+<div class="container" style="width: 100%">
+    <main role="main" class="col-12">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="border-top footer text-muted">
+    <div class="container">
+        <a asp-controller="User" asp-action="Login" class="login-a" style="text-decoration: none; color:  #616161;">Ielogoties</a>
+    </div>
+</footer>
+<script src="_framework/blazor.server.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

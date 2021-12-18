@@ -1,0 +1,26 @@
+.section[b-vwkrbkof0a]{
+    width: 100%;
+    height:15rem;
+    color: #ffffff;
+    background-color: #52489c;
+    display: flex;
+    align-content: center;
+    position: relative;
+    
+}
+h2[b-vwkrbkof0a]{
+    top:50%;
+    margin-left: 3rem;
+    position: absolute;
+    
+}
+
+.section-paragraph[b-vwkrbkof0a]{
+    top: 70%;
+    position: absolute;
+    margin-left: 3rem;
+}
+
+a[b-vwkrbkof0a]{
+    text-decoration: none;
+}

@@ -1,0 +1,34 @@
+.section[b-6r9x7qfckm]{
+    width: 100%;
+    height:12rem;
+    color: #ffffff;
+    background-image: linear-gradient(to right ,rgba(64,98,187,1), rgba(64,98,187,1), rgba(64,98,187,1), rgba(64,98,187,0));
+    stop-opacity: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+h2[b-6r9x7qfckm]{
+    top:15%;
+    margin-left: 3rem;
+    position: relative;
+}
+
+p[b-6r9x7qfckm]{
+    top:30%;
+    margin-left: 3rem;
+    position: relative;
+}
+.section-image[b-6r9x7qfckm]{
+    z-index: -1;
+    height:12rem;
+    width:24rem;
+    object-fit: cover;
+}
+
+.topic-horizontal-rule[b-6r9x7qfckm]{
+    
+}

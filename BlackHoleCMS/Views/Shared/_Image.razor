@@ -1,0 +1,17 @@
+
+@{
+    var imgSrc = "";
+    
+    if (Photo != null)
+    {
+        var base64 = Convert.ToBase64String(Photo);
+        imgSrc = $"data:image/png;base64,{base64}";
+    }
+}
+
+<img src="@imgSrc" alt="@Alt"/>
+
+@code {
+    [Parameter] public byte[]? Photo { get; set; }
+    [Parameter] public string? Alt { get; set; }
+}

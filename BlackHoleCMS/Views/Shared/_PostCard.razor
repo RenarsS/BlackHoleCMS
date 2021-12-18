@@ -1,0 +1,39 @@
+@using Photo = BlackHoleCMS.Models.Photo
+@{
+    var imgSrc = "";
+    if (photo != null)
+    {
+        var base64 = Convert.ToBase64String(photo?.File);
+        imgSrc = $"data:image/png;base64,{base64}";
+
+    }
+        
+}
+<div class="card" style="width: 100%;">
+    <div class="row gy-1">
+        <div class="col-md-4">
+        @if (photo?.FileName != null)
+        {
+            <img src="@imgSrc" alt="@photo?.FileName" class="image-container"/>
+        }
+        else{
+           <div class="col-md-4 "></div> 
+        }
+        </div>
+        <div class="col-md-8 px-0">
+            <div class="card-body">
+                <h5 class="card-title">@Title</h5>
+                <p class="card-text" style="max-height: 3ch; overflow: hidden;">@Content</p>
+                <a href="/Home/Post/@Id" class="btn btn-dark">Lasīt</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public int Id { get; set; }
+    [Parameter] public string? Content { get; set; }
+    [Parameter] public string? Title { get; set; }
+    [Parameter] public Photo? photo { get; set; }
+    
+}

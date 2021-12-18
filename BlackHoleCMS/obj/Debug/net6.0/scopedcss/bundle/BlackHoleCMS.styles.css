@@ -1,0 +1,211 @@
+/* _content/BlackHoleCMS/Views/Home/Index.cshtml.rz.scp.css */
+.section[b-vwkrbkof0a]{
+    width: 100%;
+    height:15rem;
+    color: #ffffff;
+    background-color: #52489c;
+    display: flex;
+    align-content: center;
+    position: relative;
+    
+}
+h2[b-vwkrbkof0a]{
+    top:50%;
+    margin-left: 3rem;
+    position: absolute;
+    
+}
+
+.section-paragraph[b-vwkrbkof0a]{
+    top: 70%;
+    position: absolute;
+    margin-left: 3rem;
+}
+
+a[b-vwkrbkof0a]{
+    text-decoration: none;
+}
+/* _content/BlackHoleCMS/Views/Home/Post.cshtml.rz.scp.css */
+.post-image[b-44ashclmmj]{
+    height:auto;
+    width:inherit;
+}
+/* _content/BlackHoleCMS/Views/Home/Topic.cshtml.rz.scp.css */
+.section[b-6r9x7qfckm]{
+    width: 100%;
+    height:12rem;
+    color: #ffffff;
+    background-image: linear-gradient(to right ,rgba(64,98,187,1), rgba(64,98,187,1), rgba(64,98,187,1), rgba(64,98,187,0));
+    stop-opacity: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+h2[b-6r9x7qfckm]{
+    top:15%;
+    margin-left: 3rem;
+    position: relative;
+}
+
+p[b-6r9x7qfckm]{
+    top:30%;
+    margin-left: 3rem;
+    position: relative;
+}
+.section-image[b-6r9x7qfckm]{
+    z-index: -1;
+    height:12rem;
+    width:24rem;
+    object-fit: cover;
+}
+
+.topic-horizontal-rule[b-6r9x7qfckm]{
+    
+}
+/* _content/BlackHoleCMS/Views/Photo/Index.cshtml.rz.scp.css */
+
+/* _content/BlackHoleCMS/Views/Post/Create.cshtml.rz.scp.css */
+.select-container[b-lbrxt7sn1b]{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* _content/BlackHoleCMS/Views/Shared/_Image.razor.rz.scp.css */
+img[b-h9uzh3dtph]{
+    width:inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: unset;
+}
+/* _content/BlackHoleCMS/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+.super-header[b-3ln4uoxg6h]{
+  width: 100%;
+  height:20rem;
+  color: #ffffff;
+  background-color: #0a0908;
+  display: flex;
+  align-content: center;
+  position: relative;
+}
+
+.super-header h1[b-3ln4uoxg6h] {
+  top:50%;
+  margin-left: 3rem;
+  position: absolute;
+}
+
+
+
+a.navbar-brand[b-3ln4uoxg6h] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-3ln4uoxg6h] {
+  text-decoration: none;
+  color: #616161;
+}
+
+.btn-primary[b-3ln4uoxg6h] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-3ln4uoxg6h], .nav-pills .show > .nav-link[b-3ln4uoxg6h] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-3ln4uoxg6h] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-3ln4uoxg6h] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-3ln4uoxg6h] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-3ln4uoxg6h] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-3ln4uoxg6h] {
+  color: #ffffff;
+  background-color: #0a0908;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+.login-a[b-3ln4uoxg6h]{
+  color: #616161;
+  text-decoration: none;
+  text-decoration-color: #616161;
+}
+/* _content/BlackHoleCMS/Views/Shared/_PostCard.razor.rz.scp.css */
+.image-container[b-ip6i8ts2sn]{
+    height: 100%;
+    width:100%;
+}
+
+img[b-ip6i8ts2sn]{
+    object-fit: cover;
+}
+/* _content/BlackHoleCMS/Views/Shared/_TopicCard.razor.rz.scp.css */
+.topic-container[b-uy6vwqtpmw]{
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 2rem;
+    height: 11rem;
+    width: 11rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.topic-color[b-uy6vwqtpmw]{
+
+    background-color: #52489c;
+}
+
+.topic-image[b-uy6vwqtpmw]{
+    opacity: 0.1;
+    z-index: 1;
+    transform: translateX(40px);
+    object-fit: cover;
+    height: 11rem;
+    width:12rem
+}
+
+.topic-container:hover[b-uy6vwqtpmw]{
+    background-color: #4062bb;    
+}
+
+p[b-uy6vwqtpmw]{
+    transform: translateX(-90px);
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    font-size: large;
+    margin: auto;
+    color: #ffffff;
+    text-decoration: none;
+}
+/* _content/BlackHoleCMS/Views/User/Profile.cshtml.rz.scp.css */
+.list-item-cms[b-s32glp43nf]{
+    margin: 1rem;
+}

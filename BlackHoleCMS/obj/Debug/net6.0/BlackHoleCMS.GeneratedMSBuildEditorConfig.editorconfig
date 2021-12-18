@@ -1,0 +1,140 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BlackHoleCMS
+build_property.RootNamespace = BlackHoleCMS
+build_property.ProjectDir = C:\Users\renar\RiderProjects\BlackHoleCMS\BlackHoleCMS\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\renar\RiderProjects\BlackHoleCMS\BlackHoleCMS
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Shared/_Image.razor]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JbWFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-h9uzh3dtph
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Shared/_PostCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qb3N0Q2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ip6i8ts2sn
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Shared/_TopicCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ub3BpY0NhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-uy6vwqtpmw
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Photo/Upload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvdG9cVXBsb2FkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Post/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Post/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Post/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Post/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Status/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Status/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Status/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Status/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Status/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Topic/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9waWNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Topic/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9waWNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Topic/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9waWNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Topic/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9waWNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Topic/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9waWNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-vwkrbkof0a
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Home/Post.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-44ashclmmj
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Home/Topic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUb3BpYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-6r9x7qfckm
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Photo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvdG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-k8mbvl0dvb
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Post/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-lbrxt7sn1b
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3ln4uoxg6h
+
+[C:/Users/renar/RiderProjects/BlackHoleCMS/BlackHoleCMS/Views/User/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-s32glp43nf

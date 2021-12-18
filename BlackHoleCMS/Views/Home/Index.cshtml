@@ -1,0 +1,45 @@
+﻿@using BlackHoleCMS.Views.Shared
+@model BlackHoleCMS.ViewModels.ViewPostTopic
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Home Page";
+
+}
+
+<div class="section">
+    <h2>Raksti</h2>
+    <p class="section-paragraph">Melnie caurumi ir unikāls fizikas fenomens, kura izpētē tiek iztērēti milzīgi līdzekļi. Lasi jaunākos un interesantākos rakstus šeit.</p>
+</div>
+<div class="container gy-5 my-4 justify-content-center">
+    <div class="row gy-4">
+        @foreach (var post in Model.Posts)
+        {
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xl-3 col-sm-6">
+                <component Type="@typeof(_PostCard)" render-mode="WebAssemblyPrerendered" param-Id="@post.Id" param-Content="@post.Content" param-Title="@post.Title" param-Photo="@post.Photo"/>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="section">
+    <h2>Tēmas</h2>
+    <p class="section-paragraph">Lasi rakstus pa tēmām un uzzini daudz jauna. </p>
+</div>
+<div class="container">
+    <div class="row">
+        @foreach (var topic in Model.Topics)
+        {
+            <div class="col-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3 col-sm-6 align-self-baseline justify-content-center">
+                <a asp-controller="Home" asp-action="Topic" asp-route-id="@topic.Id" style="text-decoration: none">
+                    <component type="@typeof(_TopicCard)" render-mode="ServerPrerendered" param-Name="@topic.Name" param-Photo="@topic.Photo?.File"/>
+                </a>
+            </div>
+        }
+    </div>
+
+</div>
+
+
+
+

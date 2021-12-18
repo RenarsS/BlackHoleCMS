@@ -1,0 +1,39 @@
+.topic-container[b-uy6vwqtpmw]{
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 2rem;
+    height: 11rem;
+    width: 11rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.topic-color[b-uy6vwqtpmw]{
+
+    background-color: #52489c;
+}
+
+.topic-image[b-uy6vwqtpmw]{
+    opacity: 0.1;
+    z-index: 1;
+    transform: translateX(40px);
+    object-fit: cover;
+    height: 11rem;
+    width:12rem
+}
+
+.topic-container:hover[b-uy6vwqtpmw]{
+    background-color: #4062bb;    
+}
+
+p[b-uy6vwqtpmw]{
+    transform: translateX(-90px);
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    font-size: large;
+    margin: auto;
+    color: #ffffff;
+    text-decoration: none;
+}

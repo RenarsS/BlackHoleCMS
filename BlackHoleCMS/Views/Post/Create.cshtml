@@ -1,0 +1,115 @@
+@using BlackHoleCMS.Views.Shared
+@model HttpPost
+
+@{
+    ViewData["Title"] = "Izveidot";
+    List<Topic>? topics = ViewData["Topics"] as List<Topic>;
+    List<Status>? statuses = ViewData["Statuses"] as List<Status>;
+    List<Photo>? photos = ViewData["Photos"] as List<Photo>;
+}
+
+<h1>Izveidot</h1>
+
+<h4>Raksts</h4>
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label">Nosaukums</label>
+                <input asp-for="Title" class="form-control"/>
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Content" class="control-label">Saturs</label>
+                <textarea asp-for="Content" class="form-control" ></textarea>
+                <span asp-validation-for="Content" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <!-- <label asp-for="PostedAt" class="control-label"></label>-->
+                <input type="hidden" asp-for="PostedAt" class="form-control" value="@DateTime.Now"/>
+                <span asp-validation-for="PostedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Topic" class="control-label" for="Topic">Tēma</label>
+                <select asp-for="Topic" class="form-select">
+
+                    @foreach (Topic topic in topics)
+                    {
+                        <option value="@topic.Id" class="form-control">@topic.Name</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label" for="Status">Statuss</label>
+                <select asp-for="Status" class="form-select">
+                    @foreach (Status status in statuses)
+                    {
+                        <option value="@status.Id" class="form-control">@status.Name</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Photo" class="control-label"></label>
+                <div class="accordion" id="photoAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="first-Choice">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#first-Choice-Collapse" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Augšuplādēt Attēlu
+                            </button>
+                        </h2>
+                        <div id="first-Choice-Collapse" class="accordion-collapse collapse" aria-labelledby="first-Choice" data-bs-parent="#photoAccordion">
+                            <div class="accordion-body">
+                                
+                                <input asp-for="Photo" type="file" class="form-control"/>
+                                <span asp-validation-for="Photo" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="second-Choice">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#second-Choice-Collapse" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Izvēlēties Attēlu
+                            </button>
+                        </h2>
+                        <div id="second-Choice-Collapse" class="accordion-collapse collapse" aria-labelledby="second-Choice-Choice" data-bs-parent="#photoAccordion">
+                            <div class="accordion-body">
+                                <div class="form-check">
+                                    @foreach (Photo photo in photos)
+                                    {
+                                        <div class="select-container">
+                                            <input class="form-check-input" type="radio" asp-for="PhotoId" id="@photo.Id" value="@photo.Id"/>
+                                            <label class="form-check-label" for="@photo.Id">
+                                                <div style="height: 100px; margin:1rem;">
+                                                    <component type="@typeof(_Image)" render-mode="WebAssemblyPrerendered" param-Photo="@photo.File" param-Alt="@photo.FileName"/>
+                                                </div>
+                                                @photo.FileName
+                                            </label>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+
+                </div>
+            </div>
+            <!--
+            <div class="form-group">
+                <label asp-for="Creator" class="control-label"></label>
+                <input asp-for="Creator" class="form-control" />
+                <span asp-validation-for="Creator" class="text-danger"></span>
+            </div>
+            -->
+            <div class="form-group">
+                <input type="submit" value="Izveidot" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
